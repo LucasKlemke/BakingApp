@@ -1,4 +1,3 @@
-
 import React from "react";
 import { FormField, FormLabel, FormControl, FormMessage } from "./ui/form";
 
@@ -25,9 +24,10 @@ const CustomInput = ({ control, name, label, placeholder }: CustomInput) => {
           <div className="flex w-ful flex-col">
             <FormControl>
               <Input
+                id={`${name}-input`}
                 placeholder={placeholder}
                 className="input-class"
-                type={name === 'password' ? 'password' : 'text'}
+                type={name === "password" ? "password" : "text"}
                 {...field}
               />
             </FormControl>
